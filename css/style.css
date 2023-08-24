@@ -1,12 +1,14 @@
 /* HERO SECTION  */
 
 .hero-section {
-    height: 552px;
+    min-height: 552px;
     background: url('../public/assets/hero-bg.png'), lightgray 50% / cover no-repeat;
     background-size: cover;
     background-position: 25%;
     position: relative;
     padding: 16px;
+    width: 100vw;
+    overflow: hidden;
 }
 
 .header-wrapper {
@@ -67,7 +69,6 @@
 }
 
 .close-menu-btn{
-    color: red;
     font-size: 30px;
     color: var(--highlight-title-color);
     text-decoration: none;
@@ -106,13 +107,35 @@
     display: flex;
     flex-direction: column;
     align-items: start;
-    justify-content: center;
+    /* justify-content: center; */
     position: relative;
     font-family: K2D;
     gap: 20px;
+    /* width: 80%; */
 }
 
-.text-wrapper>h1:nth-child(1) {
+.text-box{
+    width: 100%;
+    display: flex;
+}
+
+.text-box:nth-child(1){
+    justify-content: start;
+}
+
+.text-box:nth-child(2){
+    justify-content: end;
+}
+
+.text-box:nth-child(3){
+    justify-content: end;
+}
+
+.text-box:nth-child(4){
+    justify-content: end;
+}
+
+.title-one {
     color: var(--primary-text-color);
     text-transform: uppercase;
     width: 265px;
@@ -120,28 +143,53 @@
     font-weight: 800;
 }
 
-.text-wrapper>h1:nth-child(2) {
+.title-two {
     color: var(--primary-text-color);
     text-transform: uppercase;
     font-weight: 300;
-    width: 340px;
     font-size: 36px;
+    width: 265px;
     text-align: end;
 }
 
-.text-wrapper>h1>span {
+.title-one>span, .title-two > span {
     color: var(--highlight-title-color);
 }
 
-.text-wrapper>p {
-    width: 95%;
+.title-three {
     color: var(--primary-text-color);
     text-align: end;
     font-size: 16px;
     font-weight: 500;
 }
 
-.hero-section-btn{
+.text-box > hero-section-btn{
     position: relative;
     left: 38%;
+}
+
+@media screen and (min-width: 640px){
+
+    .hero-section{
+        padding: 44px;
+    }
+
+    .ellipse-one {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .ellipse-two {
+        width: 156px;
+        height: 156px;
+    }
+    
+    .title-one, .title-two{
+        font-size: 44px;
+    }
+
+    .title-three{
+        font-size: 24px;
+    }
+    
 }
