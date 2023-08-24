@@ -1,0 +1,41 @@
+:root {
+    --primary-text-color: #fff;
+    --secondary-text-color: #333;
+    --tertiaty-text-color: #4D2C6B;
+    --highlight-title-color: #CFFF11;
+    --primary-bg-button: #6C40E9;
+    --secondary-bg-button: transparent;
+    --secondary-border-button: #28103E;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Kanit;
+}
+
+.primary-btn-mobile {
+    background-color: var(--primary-bg-button);
+    border: none;
+    width: 208px;
+    padding: 16px 16px;
+    border-radius: 40px;
+    color: var(--primary-text-color);
+    font-size: 16px;
+    letter-spacing: 3.68px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: .8s all ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.primary-btn-mobile:hover {
+    background-color: #420bda;
+}

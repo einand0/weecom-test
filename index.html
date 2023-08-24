@@ -25,7 +25,43 @@
 
     <!-- HERO SECTION  -->
     <section class="hero-section">
-        <header>
+
+        <header class="header-wrapper">
+            <div class="logo" data-aos="fade-down-right">
+                <a href="#"><img src="./public/assets/logo-mobile.png" alt="logo"></a>
+            </div>
+            <button class="menu-icon-btn" onclick="openMenu()">
+                <img src="./public/assets/menu-icon.png" alt="Icone para abrir o menu">
+            </button>
+
+    
+                <ul class="overlay-content">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Works</a>
+                    </li>
+                    <li>
+                        <a href="#">Careers</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact Us</a>
+                    </li>
+                    <a href="javascript:void(0)" class="close-menu-btn" onclick="closeMenu()">&times;</a>
+                </ul>
+                
+        
+        </header>
+
+
+        <header class="desktop-header">
             <div class="logo" data-aos="fade-down-right">
                 <a href="#"><img src="./public/assets/logo.png" alt="logo"></a>
             </div>
@@ -51,24 +87,27 @@
             </ul>
         </header>
 
-        <div class="ellipse-one"></div>
-        <div class="ellipse-two"></div>
+        <div class="ellipse-one ellipse"></div>
+        <div class="ellipse-two ellipse"></div>
 
-        <h1 ><span>Creative</span> digital solutions\</h1>
-        <h1 data-aos="zoom-in" style="top: 412px; left: 687px; width: 856px; text-align: end; font-weight: 300;">For you
-            mvp's <span>product</span>.</h1>
+        <div class="text-wrapper">
 
-        <p data-aos="zoom-in">Win your pitch, build effective products.</p>
+            <h1><span>Creative</span> digital solutions\</h1>
+            <h1 data-aos="zoom-in">For you mvp's <span>products</span>.</h1>
+            <p data-aos="zoom-in">Win your pitch, build <br> effective products.</p>
+            <button class="hero-section-btn primary-btn-mobile" data-aos="zoom-in">Book a call
+                <img src="./public/assets/arrow.png" alt="arrow-icon" width="29"/>
+            </button>
+           
+        </div>
 
-        <button class="hero-section-btn primary-btn" data-aos="zoom-in">Book a call
-            <img src="./public/assets/arrow.png" alt="arrow-icon" />
-        </button>
+        
 
     </section>
 
 
     <!-- ABOUT US SECTION -->
-    <section class="about-us">
+    <!-- <section class="about-us">
 
 
         <h2 data-aos="zoom-in">About <span>us</span></h2>
@@ -96,12 +135,12 @@
         <h3 data-aos="fade-right">Our clients</h3>
         <img data-aos="fade-right" src="./public/assets/client-logos.png" class="clients-logo">
 
-    </section>
+    </section> -->
 
 
     <!-- OUR PROJECTS SECTION  -->
 
-    <section class="our-projects">
+    <!-- <section class="our-projects">
 
         <h3 div data-aos="flip-left">Our Projects</h3>
 
@@ -145,12 +184,12 @@
             </div>
         </div>
 
-    </section>
+    </section> -->
 
 
     <!-- CARROUSEL  -->
 
-    <section class="carrousel">
+    <!-- <section class="carrousel">
         <div class="gallery-wrapper">
             <div class="gallery">
                 <div class="item current-item">
@@ -182,12 +221,12 @@
                 <img src="./public/assets/arrow.png" alt="Arrow previus image">
             </button>
         </div>
-    </section>
+    </section> -->
 
 
     <!-- TESTIMONIALS  -->
 
-    <section class="testimonials">
+    <!-- <section class="testimonials">
 
         <h3 data-aos="zoom-in-up">Testimonials</h3>
         <div class="testimonials-wrapper" data-aos="zoom-in-up">
@@ -227,20 +266,20 @@
             <img src="./public/assets/squares-bg.png">
         </div>
 
-    </section>
+    </section> -->
 
     <!-- BOOK A CALL SECTION  -->
-    <section class="book-a-call-section">
+    <!-- <section class="book-a-call-section">
         <p>We build products effectively and with powerful aesthetics looks in very flexible cost. We combined our craft
             skills and user experience to create a great useful product yet delightful.</p>
         <button class="primary-btn">Book a call
             <img src="./public/assets/arrow.png" alt="arrow-icon" />
         </button>
-    </section>
+    </section> -->
 
 
     <!-- FOOTER  -->
-    <footer>
+    <!-- <footer>
         <div class="feedback-section">
             <p>We would love to hear from you.</p>
             <span>You can drop us a line via email</span>
@@ -299,7 +338,7 @@
                 <img src="./public/assets/arrow.png" alt="arrow-right">
             </button>
         </div>
-    </footer>
+    </footer> -->
 
     <!-- ANIMATION -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
