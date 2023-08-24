@@ -193,3 +193,29 @@
     }
     
 }
+
+@media screen and (min-width: 768px){
+
+    .hero-section{
+        padding: 52px;
+    }
+
+    .ellipse-one {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .ellipse-two {
+        width: 156px;
+        height: 156px;
+    }
+    
+    .title-one, .title-two{
+        font-size: 52px;
+    }
+
+    .title-three{
+        font-size: 32px;
+    }
+    
+}
