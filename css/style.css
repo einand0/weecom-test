@@ -201,13 +201,13 @@
     }
 
     .ellipse-one {
-        width: 250px;
-        height: 250px;
+        width: 270px;
+        height: 270px;
     }
 
     .ellipse-two {
-        width: 156px;
-        height: 156px;
+        width: 200px;
+        height: 200px;
     }
 
     .title-one,
@@ -225,6 +225,7 @@
 
     .hero-section {
         padding: 30px 60px;
+        height: 90vh;
     }
 
     .menu-icon-btn {
@@ -240,7 +241,7 @@
         justify-content: space-between;
         align-items: center;
         margin: auto;
-        margin-bottom: 30px;
+        margin-bottom: 60px;
     }
 
     .desktop-header>ul {
@@ -276,8 +277,8 @@
     }
 
     .ellipse-one {
-        width: 408px;
-        height: 408px;
+        width: 398px;
+        height: 398px;
     }
 
     .ellipse-two {
@@ -289,6 +290,53 @@
     .title-two {
         font-size: 66px;
         width: 600px;
+    }
+
+    .title-three {
+        font-size: 32px;
+    }
+    
+    .primary-btn-mobile{
+        width: 270px;
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+
+    .hero-section {
+        padding: 30px 60px;
+    }
+
+    .desktop-header {
+        margin: 0 auto;
+        margin-bottom: 90px;
+        width: 1325px;
+    }
+
+
+    .ellipse-one {
+        width: 488px;
+        height: 488px;
+    }
+
+    .ellipse-two {
+        width: 287px;
+        height: 287px;
+        left: 70%;
+        top: 40%;
+    }
+
+    .text-wrapper{
+        width: 1325px;
+        margin: 0 auto;
+    }
+
+    .title-one,
+    .title-two {
+        font-size: 96px;
+        width: 90%;
+        line-height: 100px;
     }
 
     .title-three {
