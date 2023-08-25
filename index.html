@@ -216,7 +216,7 @@
 
             </div>
         </div>
-        
+
     </section>
 
 
@@ -243,7 +243,8 @@
                     <span>Tony - CEO at Company 1</span>
                 </div>
                 <div class="testimonial-card">
-                    <p>"They provided their creative creative and ideas yet still gicing the best solution to our company's
+                    <p>"They provided their creative creative and ideas yet still gicing the best solution to our
+                        company's
                         goals."
                     </p>
                     <span>Douglas - CEO at Company 2</span>
@@ -269,8 +270,8 @@
                 <img src="./public/assets/arrow.png" alt="Arrow previous image">
             </button>
 
-            
-        
+
+
 
         </div>
 
@@ -282,11 +283,11 @@
         <div class="testimonials-bg">
             <img src="./public/assets/squares-bg.png">
         </div>
-        
+
         <p>We build products effectively and with powerful aesthetics looks in very flexible cost. We combined our craft
             skills and user experience to create a great useful product yet delightful.</p>
         <button class="primary-btn-mobile">Book a call
-            <img src="./public/assets/arrow.png" alt="arrow-icon" width="36"/>
+            <img src="./public/assets/arrow.png" alt="arrow-icon" width="36" />
         </button>
     </section>
 
@@ -348,7 +349,7 @@
         </div>
         <div class="newsletter-section">
             <h3>Join the newsletter!</h3>
-            <button class="secondary-btn-mobile">
+            <button class="secondary-btn-mobile" onclick="openNewsletterModal()">
                 <span>your e-mail adress</span>
                 <img src="./public/assets/arrow.png" alt="arrow-right" width="30">
             </button>
@@ -357,6 +358,27 @@
             <span>Copyright by Beady Agency, 2023</span>
         </div>
     </footer>
+
+
+    <!-- NEWSLETTER MODAL  -->
+    <div class="newsletter-modal">
+        <img src="./public/assets/logo-desktop.png" alt="">
+        <a href="javascript:void(0)" class="close-menu-btn" onclick="closeNewsletterModal()">&times;</a>
+
+        <h2>We're <span>glad</span> you're here!</h2>
+
+        <p>Enter your e-mail and join our e-mail list. You'll be the first to hear about our news.</p>
+
+        <form class="newsletter-form">
+            <div>
+                <input type="email" name="email" id="email" onblur="validateEmail()" onfocus="redefineMessage()" required>
+                <span id="email-error"></span>
+            </div>
+            <div>
+                <input type="submit" value="Send" class="primary-btn-mobile">
+            </div>
+        </form>
+    </div>
 
     <!-- ANIMATION -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

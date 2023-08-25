@@ -5,12 +5,12 @@ menuBtn.addEventListener('click', () => {
     console.log("Funcionando!")
 })
 
-function openMenu(){
-    document.querySelector('.overlay-content').style.width='100%';
+function openMenu() {
+    document.querySelector('.overlay-content').style.width = '100%';
 }
 
-function closeMenu(){
-    document.querySelector('.overlay-content').style.width='0%';
+function closeMenu() {
+    document.querySelector('.overlay-content').style.width = '0%';
 }
 
 // OUR PROJECTS CARROUSEL
@@ -24,17 +24,17 @@ controls.forEach(control => {
     control.addEventListener('click', () => {
         const isLeft = control.classList.contains("arrow-left");
 
-        if(isLeft){
+        if (isLeft) {
             currentItem -= 1;
-        } else{
+        } else {
             currentItem += 1;
         }
-        
-        if(currentItem >= maxItems){
+
+        if (currentItem >= maxItems) {
             currentItem = 0;
         }
 
-        if(currentItem < 0){
+        if (currentItem < 0) {
             currentItem = maxItems - 1;
         }
 
@@ -60,20 +60,20 @@ const testimonialItems = document.querySelectorAll('.testimonial-card');
 const testimonialMaxItems = testimonialItems.length;
 
 testimonialControls.forEach(testimonialControl => {
-    testimonialControl.addEventListener('click' , () => {
+    testimonialControl.addEventListener('click', () => {
         const isLetf = testimonialControl.classList.contains('arrow-left');
 
-        if(isLetf){
+        if (isLetf) {
             testimonialCurrentItem -= 1;
-        } else{
+        } else {
             testimonialCurrentItem += 1;
         }
 
-        if(testimonialCurrentItem >= testimonialMaxItems){
+        if (testimonialCurrentItem >= testimonialMaxItems) {
             testimonialCurrentItem = 0;
         }
 
-        if(testimonialCurrentItem < 0){
+        if (testimonialCurrentItem < 0) {
             testimonialCurrentItem = testimonialMaxItems - 1;
         }
 
@@ -87,3 +87,35 @@ testimonialControls.forEach(testimonialControl => {
         testimonialItems[testimonialCurrentItem].classList.add("current-testimonial-item");
     })
 })
+
+
+// OPEN MODAL FOR NEWSLETTER
+
+function openNewsletterModal() {
+    document.querySelector('.newsletter-modal').style.width = '100%';
+    document.querySelector('.newsletter-modal').style.right = '0';
+}
+
+function closeNewsletterModal() {
+    document.querySelector('.newsletter-modal').style.width = '0%';
+    document.querySelector('.newsletter-modal').style.right = '-40px';
+}
+
+// VALIDAR EMAIL
+
+
+function validateEmail() {
+    var email = document.querySelector('#email');
+    var error = document.querySelector('#email-error');
+
+    if (!email.checkValidity()) {
+        error.innerHTML = "Invalid e-mail! Please, enter a valid e-mail.";
+    } 
+}
+
+function redefineMessage() {
+    var error = document.querySelector('#email-error');
+    if (error.innerHTML == "Invalid e-mail! Please, enter a valid e-mail.") {
+        error.innerHTML = "";
+    }
+}
