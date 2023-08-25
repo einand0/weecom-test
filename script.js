@@ -48,3 +48,42 @@ controls.forEach(control => {
         items[currentItem].classList.add("current-item");
     })
 })
+
+
+// TESTIMONIALS CARROUSEL
+
+
+const testimonialControls = document.querySelectorAll('.testimonial-control');
+
+let testimonialCurrentItem = 0;
+const testimonialItems = document.querySelectorAll('.testimonial-card');
+const testimonialMaxItems = testimonialItems.length;
+
+testimonialControls.forEach(testimonialControl => {
+    testimonialControl.addEventListener('click' , () => {
+        const isLetf = testimonialControl.classList.contains('arrow-left');
+
+        if(isLetf){
+            testimonialCurrentItem -= 1;
+        } else{
+            testimonialCurrentItem += 1;
+        }
+
+        if(testimonialCurrentItem >= testimonialMaxItems){
+            testimonialCurrentItem = 0;
+        }
+
+        if(testimonialCurrentItem < 0){
+            testimonialCurrentItem = testimonialMaxItems - 1;
+        }
+
+        testimonialItems.forEach(testimonialItem => testimonialItem.classList.remove('current-testimonial-item'));
+
+        testimonialItems[testimonialCurrentItem].scrollIntoView({
+            inline: "center",
+            behavior: "smooth",
+        })
+
+        testimonialItems[testimonialCurrentItem].classList.add("current-testimonial-item");
+    })
+})
