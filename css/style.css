@@ -365,6 +365,8 @@
     z-index: 4;
     height: 51vh;
     margin-top: 20px;
+    position: relative;
+    left: 5%;
 }
 
 .about-us>p {
@@ -384,8 +386,8 @@
 
 .aboutus-img1 {
     position: absolute;
-    top: 119px;
-    left: 82px;
+    top: 9.7%;
+    left: 22%;
     z-index: 1;
 }
 
@@ -396,8 +398,8 @@
 
 .aboutus-img2 {
     position: absolute;
-    top: 282px;
-    left: 24px;
+    top: 22.5%;
+    left: 8.5%;
     z-index: 2;
 }
 
@@ -408,8 +410,8 @@
 
 .aboutus-img2-rec {
     position: absolute;
-    top: 272px;
-    left: 38px;
+    top: 21.5%;
+    left: 11%;
     z-index: 3;
 }
 
@@ -429,3 +431,43 @@
 .clients-mobile-logo{
     width: 90%;
 }
+
+@media screen and (min-width: 640px) {
+    .about-us>h2 {
+        margin-top: 28px;
+        text-align: center;
+    }
+    
+    .aboutus-img1 {
+        left: 32%;
+    }
+
+    .aboutus-img2 {
+        top: 21.5%;
+        left: 18.5%;
+    }
+    
+    .aboutus-img2-rec {
+        top: 20.5%;
+        left: 21%;
+    }
+
+    .about-us>h3 {
+        margin: 90px 0 20px 0;
+    }
+
+    .clients-mobile-logo{
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1024px) {
+}
+
+@media screen and (min-width: 1280px) {
+}
+
