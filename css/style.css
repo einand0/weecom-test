@@ -443,7 +443,7 @@
 }
 
 .clients-mobile-logo {
-    width: 80%;
+    width: 60%;
 }
 
 .clients-desktop-logo {
@@ -621,6 +621,7 @@
     }
 }
 
+/* END ABOUT US SECTION  */
 
 /* OUR PROJECTS SECTION  */
 
@@ -739,7 +740,7 @@
         z-index: 2;
     }
 
-    .achievements{
+    .achievements {
         flex-direction: row;
         margin-top: 100px;
     }
@@ -747,9 +748,99 @@
 
 @media screen and (min-width: 1280px) {
 
-    .project-card:nth-child(2), .project-card:nth-child(4), .project-card:nth-child(5){
+    .project-card:nth-child(2),
+    .project-card:nth-child(4),
+    .project-card:nth-child(5) {
         position: relative;
         top: 50px;
     }
 
+}
+
+/* END OUR PROJECT SESSION  */
+
+/* CARROUSEL SECTION  */
+
+.carrousel {
+    position: relative;
+    min-height: 262px;
+    width: 100%;
+}
+
+.gallery-wrapper {
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.gallery-wrapper::-webkit-scrollbar{
+    display: none;
+}
+
+.gallery {
+    display: flex;
+    flex-flow: row nowwrap;
+}
+
+.item {
+    width: 390px;
+    height: 262px;
+    flex-shrink: 0;
+    opacity: 0.6;
+    transition: all 600ms ease-in-out;
+    position: relative;
+}
+
+.current-item {
+    opacity: 1;
+}
+
+.img-item {
+    width: 390px;
+    height: 262px;
+}
+
+.item>span {
+    position: absolute;
+    left: 16px;
+    bottom: 75px;
+    color: var(--primary-text-color);
+    font-family: Kanit;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 4.6px;
+}
+
+.item-cap {
+    position: absolute;
+    left: 10px;
+    bottom: 28px;
+    padding: 8px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    border: 1px solid #F2F2F2;
+    background-color: transparent;
+    color: var(--primary-text-color);
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 4.6px;
+}
+
+@media screen and (min-width: 1024px) {
+    .carrousel {
+        min-height: 687px;
+    }
+
+
+    .item {
+        width: 687px;
+        height: 458px;
+    }
+
+    .img-item {
+        width: 687px;
+        height: 458px;
+    }
 }
