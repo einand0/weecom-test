@@ -40,3 +40,18 @@ body {
 .primary-btn-mobile:hover {
     background-color: #420bda;
 }
+
+.secondary-btn-mobile{
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    padding: 16px 16px;
+    border-radius: 40px;
+    color: var(--primary-text-color);
+    border: 1px solid #fff;
+    font-size: 16px;
+    letter-spacing: 3.68px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: .8s all ease-in-out;
+}
