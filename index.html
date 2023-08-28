@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weecom - Teste Front-End Junior</title>
+    <title>Weecom - Teste Front-End Júnior</title>
     <!-- SCRIPT  -->
 
     <!-- CSS -->
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- FONTES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,34 +25,34 @@
 <body>
 
     <!-- HERO SECTION  -->
-    <section class="hero-section">
+    <section class="hero-section" id="home-anchor">
         <header class="header-wrapper">
             <div class="logo" data-aos="fade-down-right">
-                <a href="#"><img src="./public/assets/logo-mobile.png" alt="logo"></a>
+                <a href="#"><img src="./public/assets/logo-mobile.png" alt="Beady Agency Logo"></a>
             </div>
             <button class="menu-icon-btn" onclick="openMenu()">
-                <img src="./public/assets/menu-icon.png" alt="Icone para abrir o menu">
+                <img src="./public/assets/menu-icon.png" alt="Icon to open menu">
             </button>
 
             <!-- MENU FOR MOBILE DEVICES -->
             <ul class="overlay-content">
                 <li>
-                    <a href="#">Home</a>
+                    <a href="#home-anchor">Home</a>
                 </li>
                 <li>
-                    <a href="#">About Us</a>
+                    <a href="#aboutus-anchor">About Us</a>
                 </li>
                 <li>
-                    <a href="#">Services</a>
+                    <a href="#services-anchor">Services</a>
                 </li>
                 <li>
-                    <a href="#">Works</a>
+                    <a href="#works-anchor">Works</a>
                 </li>
                 <li>
                     <a href="#">Careers</a>
                 </li>
                 <li>
-                    <a href="#">Contact Us</a>
+                    <a href="#contactus-anchor">Contact Us</a>
                 </li>
                 <a href="javascript:void(0)" class="close-menu-btn" onclick="closeMenu()">&times;</a>
             </ul>
@@ -60,26 +61,26 @@
         <!-- HEADER FOR DESKTOP DEVICES  -->
         <header class="desktop-header">
             <div class="logo" data-aos="fade-down-right">
-                <a href="#"><img src="./public/assets/logo-desktop.png" alt="logo"></a>
+                <a href="#"><img src="./public/assets/logo-desktop.png" alt="Beady Agency Logo"></a>
             </div>
             <ul class="nav-bar" data-aos="fade-up-left">
                 <li>
-                    <a href="#">Home</a>
+                    <a href="#home-anchor">Home</a>
                 </li>
                 <li>
-                    <a href="#">About Us</a>
+                    <a href="#aboutus-anchor">About Us</a>
                 </li>
                 <li>
-                    <a href="#">Services</a>
+                    <a href="#services-anchor">Services</a>
                 </li>
                 <li>
-                    <a href="#">Works</a>
+                    <a href="#works-anchor">Works</a>
                 </li>
                 <li>
                     <a href="#">Careers</a>
                 </li>
                 <li>
-                    <a href="#">Contact Us</a>
+                    <a href="#contactus-anchor">Contact Us</a>
                 </li>
             </ul>
         </header>
@@ -107,7 +108,7 @@
 
 
     <!-- ABOUT US SECTION -->
-    <section class="about-us">
+    <section class="about-us" id="aboutus-anchor">
         <div class="about-us-text">
             <h2 data-aos="zoom-in">About <span>us</span></h2>
             <p data-aos="zoom-in">beady agency, a creative digital agency for mvp’s digital products. we are serving
@@ -119,10 +120,6 @@
                 potential chances in the digital world.</p>
         </div>
 
-        <!-- 
-        <div class="bg-square">
-            <img src="./public/assets/squares-bg.png">
-        </div> -->
         <div class="aboutus-img1">
             <img src="./public/assets/aboutus-2.png">
         </div>
@@ -132,19 +129,17 @@
         <div class="aboutus-img2-rec">
             <img src="./public/assets/rec.png">
         </div>
-
         <div class="clients-wrapper">
             <h3>Our Clients</h3>
-            <img src="./public/assets/mobile-client-logos.png" class="clients-mobile-logo">
-            <img src="./public/assets/client-logos.png" class="clients-desktop-logo">
+            <img src="./public/assets/mobile-client-logos.png" class="clients-mobile-logo" alt="Clients logo">
+            <img src="./public/assets/client-logos.png" class="clients-desktop-logo" alt="Clients logo">
         </div>
-
     </section>
 
 
     <!-- OUR PROJECTS SECTION  -->
 
-    <section class="our-projects">
+    <section class="our-projects" id="services-anchor">
         <h3 div data-aos="flip-left">Our Projects</h3>
 
         <div class="projects-wrapper">
@@ -174,13 +169,11 @@
             </div>
         </div>
 
-
         <div class="achievements" data-aos="zoom-in">
             <div class="achievement-wrapper">
                 <h3>156</h3>
                 <span>Completed Projects</span>
             </div>
-
             <div class="achievement-wrapper">
                 <h3>30</h3>
                 <span>Awards & Features</span>
@@ -189,41 +182,36 @@
 
     </section>
 
-
     <!-- CARROUSEL  -->
 
-    <section class="carrousel">
+    <section class="carrousel" id="works-anchor">
         <div class="gallery-wrapper">
             <div class="gallery">
                 <div class="item current-item">
-                    <img src="./public/assets/carrousel-1.png" alt="image-1" class="img-item">
+                    <img src="./public/assets/carrousel-1.png" alt="Carrousel image one" class="img-item">
                     <div class="item-cap">Trading Digital App</div>
                     <span>Saas - 2022</span>
                 </div>
 
                 <div class="item">
-                    <img src="./public/assets/carrousel-2.png" alt="image-2" class="img-item">
+                    <img src="./public/assets/carrousel-2.png" alt="Carrousel image two" class="img-item">
                     <div class="item-cap">Affiliate App</div>
                     <span>Saas - 2022</span>
                 </div>
 
                 <div class="item">
-                    <img src="./public/assets/carrousel-3.png" alt="image-3" class="img-item">
+                    <img src="./public/assets/carrousel-3.png" alt="Carrousel image three" class="img-item">
                     <div class="item-cap">News Dashboard</div>
                     <span>Saas - 2022</span>
                 </div>
-
-
             </div>
         </div>
-
     </section>
 
 
     <!-- TESTIMONIALS  -->
 
     <section class="testimonials">
-
         <!-- CARROUSEL BUTTONS -->
         <div class="buttons-wrapper">
             <button class="arrow-left control" arial-label="Previous Image">
@@ -245,13 +233,11 @@
                 <div class="testimonial-card">
                     <p>"They provided their creative creative and ideas yet still gicing the best solution to our
                         company's
-                        goals."
-                    </p>
+                        goals."</p>
                     <span>Douglas - CEO at Company 2</span>
                 </div>
                 <div class="testimonial-card">
-                    <p>"Their communication and flexibility as are very clear, interesting and the most impressive."
-                    </p>
+                    <p>"Their communication and flexibility as are very clear, interesting and the most impressive."</p>
                     <span>Michael Pat - CEO at Company 3</span>
                 </div>
                 <div class="testimonial-card">
@@ -269,12 +255,7 @@
             <button class="arrow-right testimonial-control" arial-label="Next Image">
                 <img src="./public/assets/arrow.png" alt="Arrow previous image">
             </button>
-
-
-
-
         </div>
-
     </section>
 
     <!-- BOOK A CALL SECTION  -->
@@ -287,13 +268,12 @@
         <p>We build products effectively and with powerful aesthetics looks in very flexible cost. We combined our craft
             skills and user experience to create a great useful product yet delightful.</p>
         <button class="primary-btn-mobile">Book a call
-            <img src="./public/assets/arrow.png" alt="arrow-icon" width="36" />
+            <img src="./public/assets/arrow.png" alt="Arrow icon" width="36" />
         </button>
     </section>
 
-
     <!-- FOOTER  -->
-    <footer>
+    <footer id="contactus-anchor">
         <div class="feedback-section">
             <h4>We would love to hear from you.</h4>
             <span>You can drop us a line via email</span>
@@ -308,22 +288,22 @@
             <div class="navbar-section">
                 <ul>
                     <li>
-                        <a href="#">Home</a>
+                        <a href="#home-anchor">Home</a>
                     </li>
                     <li>
-                        <a href="#">About Us</a>
+                        <a href="#aboutus-anchor">About Us</a>
                     </li>
                     <li>
-                        <a href="#">Services</a>
+                        <a href="#services-anchor">Services</a>
                     </li>
                     <li>
-                        <a href="#">Works</a>
+                        <a href="#works-anchor">Works</a>
                     </li>
                     <li>
-                        <a href="#">Career</a>
+                        <a href="#">Careers</a>
                     </li>
                     <li>
-                        <a href="#">Contact Us</a>
+                        <a href="#contactus-anchor">Contact Us</a>
                     </li>
                 </ul>
             </div>
@@ -371,7 +351,8 @@
 
         <form class="newsletter-form">
             <div>
-                <input type="email" name="email" id="email" onblur="validateEmail()" onfocus="redefineMessage()" required>
+                <input type="email" name="email" id="email" onblur="validateEmail()" onfocus="redefineMessage()"
+                    required>
                 <span id="email-error"></span>
             </div>
             <div>
